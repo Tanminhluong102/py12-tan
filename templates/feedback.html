@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fb</title>
+</head>
+<body>
+
+<form action="/feedback/" method="post">
+    {% csrf_token %}
+    <input type="text" name="content">
+    <input type="text" name="name">
+    <input type="text" name="email">
+    <input type="text" name="subject">
+    <input type="submit" value="Gui">
+</form>
+
+</body>
+</html>

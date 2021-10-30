@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xin Chào</title>
+    <style>
+        .news{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        {% for new in news %}
+            <h1 class="news-title">{{new.title}}</h1>
+            <p class="news-context">{{new.context}}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
